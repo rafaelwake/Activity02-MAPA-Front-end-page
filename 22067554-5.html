@@ -14,83 +14,87 @@
   <style>
     /*resposivo*/
     @media screen and (max-width: 480px) {
-    header,
-    body,
-    main {
+      header,
+      body,
+      main {
         width: auto;
-    }
+      }
     }
 
     /*font from google */
-    html, body {   font-family: "Montserrat", sans-serif;}
+    html,
+    body {
+      font-family: "Montserrat", sans-serif;
+      min-width: 320px;
+      max-width: 1400px;
+    }
 
     /*header*/
     header {
-    background-color: royalblue;
-    padding: 1em 0;
-    color: whitesmoke;
-    margin: 0.5em 1em;
+      background-color: royalblue;
+      padding: 1em 0;
+      color: whitesmoke;
+      margin: 0.5em 1em;
     }
 
     /*header*/
-    .titulo-centralizado{
-        text-align: center;
-        font-size: 2.2em;
-        font-weight: bolder;
+    .titulo-centralizado {
+      text-align: center;
+      font-size: 2.2em;
+      font-weight: bolder;
     }
-
 
     /*section and main*/
-    main{
-        background: white;
-        color: black;
-        margin: 0em 5em 0 5em;
-        width: auto;
+    main {
+      background: white;
+      color: black;
+      margin: 0em 5em 0 5em;
+      width: auto;
     }
 
-    .modulo{
-        margin: 2em 0em 0 0;    
+    .modulo {
+      margin: 2em 0em 0 0;
     }
 
-    .modulo-titulo{
-        background: lightblue;
-        text-align: left;
-        font-weight: bold;
-        font-size: 1.5em;
-        border: none;
-        border-radius: 0.5em;
-        padding: 0.5em 0 0.5em 0.5em;
-        margin: 1em 0em;
+    .modulo-titulo {
+      background: lightblue;
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.5em;
+      border: none;
+      border-radius: 0.5em;
+      padding: 0.5em 0 0.5em 0.5em;
+      margin: 1em 0em;
     }
 
-    .disciplina{
-        display: inline-block;
-        width: 49%;
+    .disciplina {
+      display: inline-block;
+      width: 49%;
     }
 
-    .titulo-esquerda{
-        font-size: 1.2em;
-        font-weight: bold;
-        margin: 1em 0em;
+    .titulo-esquerda {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 1em 0em;
     }
 
-    p2{
-        font-size: 1em;
-        text-align: justify;
-        font-weight: 500;
+    p2 {
+      font-size: 1em;
+      text-align: justify;
+      font-weight: 500;
     }
 
     /*footer*/
-    footer{
-        margin: 4em;
-        background: white;
-        color: black;
+    footer {
+      margin: 4em;
+      background: white;
+      color: black;
     }
 
-    .titulo-centralizado-footer{
-        text-align: center;
-        font-size: 0.8em;
-        font-weight: bolder;
+    .titulo-centralizado-footer {
+      text-align: center;
+      font-size: 0.8em;
+      font-weight: bolder;
     }
   </style>
 
@@ -100,113 +104,116 @@
     </header>
 
     <main>
-        <section class="modulo">
-            <h2 class="modulo-titulo">Módulo 52 - Em andamento</h2>
-            <p1>Periodo 02/05/2022 a 30/07/2022</p1>
-        </section>
-        
-        <section class="disciplina">
-          <h2 class="titulo-esquerda">PROGRAMAÇÃO FRONT END</h2>
-          <p2>Conceitos básicos de webdesign, Linguagens de marcação HTML (versão
-            05) e CSS (versão 03),Linguagem de programação Javascript e
-            biblioteca Jquery. Estudo de caso.</p2>
-        </section>
+      <section class="modulo">
+        <h2 class="modulo-titulo">Módulo 52 - Em andamento</h2>
+        <p1>Periodo 02/05/2022 a 30/07/2022</p1>
+      </section>
 
-        <section class="disciplina">
-            <h2 class="titulo-esquerda">GO - OPORTUNIDADES E RESULTADOS</h2>
-            <p2
-              >Direcionamento para a vida tendo como base as suas aspirações,
-              crenças e valores.</p2>
-          </section>
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">PROGRAMAÇÃO FRONT END</h2>
+        <p2
+          >Conceitos básicos de webdesign, Linguagens de marcação HTML (versão
+          05) e CSS (versão 03),Linguagem de programação Javascript e biblioteca
+          Jquery. Estudo de caso.</p2
+        >
+      </section>
 
-        <section class="disciplina">
-          <h2 class="titulo-esquerda">FORMAÇÃO SOCIOCULTURAL E ÉTICA II</h2>
-          <p2>Estudo de acontecimentos socioculturais (relações étnico-raciais, a
-            história e a cultura afro-brasileira e indígena políticas
-            educacionais da valorização das diversidades e dos direitos humanos.
-            Políticas de Educação Ambiental e Sustentabilidade) que permeiam a
-            sociedade contemporânea visando o desenvolvimento crítico dos
-            sujeitos que a formam e a relação ética com esses temas. (FOCO – CIDADÃO).
-          </p2>
-        </section>
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">GO - OPORTUNIDADES E RESULTADOS</h2>
+        <p2
+          >Direcionamento para a vida tendo como base as suas aspirações,
+          crenças e valores.</p2
+        >
+      </section>
 
-        <section class="disciplina">
-          <h2 class="titulo-esquerda">GO - IDENTIFICAÇÃO DE OPORTUNIDADES</h2>
-          <p2
-            >Direcionamento para a vida tendo como base as suas aspirações,
-            crenças e valores.</p2
-          >
-        </section>
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">FORMAÇÃO SOCIOCULTURAL E ÉTICA II</h2>
+        <p2
+          >Estudo de acontecimentos socioculturais (relações étnico-raciais, a
+          história e a cultura afro-brasileira e indígena políticas educacionais
+          da valorização das diversidades e dos direitos humanos. Políticas de
+          Educação Ambiental e Sustentabilidade) que permeiam a sociedade
+          contemporânea visando o desenvolvimento crítico dos sujeitos que a
+          formam e a relação ética com esses temas. (FOCO – CIDADÃO).
+        </p2>
+      </section>
+
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">GO - IDENTIFICAÇÃO DE OPORTUNIDADES</h2>
+        <p2
+          >Direcionamento para a vida tendo como base as suas aspirações,
+          crenças e valores.</p2
+        >
+      </section>
 
       <section class="modulo">
         <h2 class="modulo-titulo">Módulo 51 - Finalizado</h2>
         <p1>Periodo 21/02/2022 a 30/04/2022</p1>
       </section>
 
-        <section class="disciplina">
-          <h2 class="titulo-esquerda">FORMAÇÃO SOCIOCULTURAL E ÉTICA I</h2>
-          <p2
-            >Estudo de acontecimentos socioculturais (relações étnico-raciais, a
-            história e a cultura afro-brasileira e indígena políticas
-            educacionais da valorização das diversidades e dos direitos humanos.
-            Políticas de Educação Ambiental e Sustentabilidade) que permeiam a
-            sociedade contemporânea visando o desenvolvimento crítico dos
-            sujeitos que a formam e a relação ética com esses temas. (FOCO –
-            CIDADÃO)
-          </p2>
-        </section>
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">FORMAÇÃO SOCIOCULTURAL E ÉTICA I</h2>
+        <p2
+          >Estudo de acontecimentos socioculturais (relações étnico-raciais, a
+          história e a cultura afro-brasileira e indígena políticas educacionais
+          da valorização das diversidades e dos direitos humanos. Políticas de
+          Educação Ambiental e Sustentabilidade) que permeiam a sociedade
+          contemporânea visando o desenvolvimento crítico dos sujeitos que a
+          formam e a relação ética com esses temas. (FOCO – CIDADÃO)
+        </p2>
+      </section>
 
-        <section class="disciplina">
-          <h2 class="titulo-esquerda">FUNDAMENTOS DE REDES DE COMPUTADORES</h2>
-          <p2
-            >Conhecer os variados tipos de redes de computadores, suas
-            tecnologias atuais e futuras, equipamentos de rede e modelos de
-            referência. Familiarizar-se com os protocolos e as arquiteturas de
-            redes mais utilizadas na atualidade. Padrões IEEE para redes locais.
-            Camadas de rede, transporte e aplicação do TCP/IP.
-          </p2>
-        </section>
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">FUNDAMENTOS DE REDES DE COMPUTADORES</h2>
+        <p2
+          >Conhecer os variados tipos de redes de computadores, suas tecnologias
+          atuais e futuras, equipamentos de rede e modelos de referência.
+          Familiarizar-se com os protocolos e as arquiteturas de redes mais
+          utilizadas na atualidade. Padrões IEEE para redes locais. Camadas de
+          rede, transporte e aplicação do TCP/IP.
+        </p2>
+      </section>
 
-        <section class="disciplina">
-          <h2 class="titulo-esquerda">
-            GESTÃO DE PESSOAS E DESENVOLVIMENTO DE EQUIPES
-          </h2>
-          <p2
-            >Conceitos de gestão de pessoas. Subsistemas de Recursos Humanos.
-            Desafios da gestão de pessoas. Planejamento de Recursos Humanos.
-            Retenção e movimentação de talentos. Planos de Carreira e de
-            Sucessão. Liderança de equipes. Motivação de pessoas e satisfação no
-            trabalho. Ambiente de trabalho e comunicação. A importância da
-            comunicação na gestão de pessoas. Comunicação interna e
-            Endomarketing. Entendendo os grupos de trabalho. Estágios de grupos
-            e desenvolvimento de equipes. Equipes de alta performance.
-          </p2>
-        </section>
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">
+          GESTÃO DE PESSOAS E DESENVOLVIMENTO DE EQUIPES
+        </h2>
+        <p2
+          >Conceitos de gestão de pessoas. Subsistemas de Recursos Humanos.
+          Desafios da gestão de pessoas. Planejamento de Recursos Humanos.
+          Retenção e movimentação de talentos. Planos de Carreira e de Sucessão.
+          Liderança de equipes. Motivação de pessoas e satisfação no trabalho.
+          Ambiente de trabalho e comunicação. A importância da comunicação na
+          gestão de pessoas. Comunicação interna e Endomarketing. Entendendo os
+          grupos de trabalho. Estágios de grupos e desenvolvimento de equipes.
+          Equipes de alta performance.
+        </p2>
+      </section>
 
-        <section class="disciplina">
-            <h2 class="titulo-esquerda">DESIGN GRÁFICO</h2>
-            <p2
-              >Desenvolver e criar a parte visual de sites, aplicativos mobile e
-              outros tipos de materiais, como por exemplo panfletos, outdoors,
-              banners, embalagens, anúncios, campanhas e logotipos.
-            </p2>
-          </section>
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">DESIGN GRÁFICO</h2>
+        <p2
+          >Desenvolver e criar a parte visual de sites, aplicativos mobile e
+          outros tipos de materiais, como por exemplo panfletos, outdoors,
+          banners, embalagens, anúncios, campanhas e logotipos.
+        </p2>
+      </section>
 
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">GO - PREPARAÇÃO PARA OPORTUNIDADES</h2>
+        <p2
+          >Direcionamento para a vida tendo como base as suas aspirações,
+          crenças e valores.</p2
+        >
+      </section>
 
-        <section class="disciplina">
-            <h2 class="titulo-esquerda">GO - PREPARAÇÃO PARA OPORTUNIDADES</h2>
-            <p2>Direcionamento para a vida tendo como base as suas aspirações,
-              crenças e valores.</p2>
-          </section>
-  
-          <section class="disciplina">
-            <h2 class="titulo-esquerda">GO - IDENTIFICAÇÃO DE OPORTUNIDADES</h2>
-            <p2
-              >Direcionamento para a vida tendo como base as suas aspirações,
-              crenças e valores.</p2
-            >
-          </section>
-
+      <section class="disciplina">
+        <h2 class="titulo-esquerda">GO - IDENTIFICAÇÃO DE OPORTUNIDADES</h2>
+        <p2
+          >Direcionamento para a vida tendo como base as suas aspirações,
+          crenças e valores.</p2
+        >
+      </section>
     </main>
 
     <footer>
