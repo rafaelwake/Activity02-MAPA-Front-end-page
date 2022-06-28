@@ -49,7 +49,6 @@
     padding: 1em;
   }
 
-  /*section and main*/
 
   .autenticacao {
     margin: 2em 10em 2em 10em;
@@ -71,7 +70,8 @@
   .formulario,
   .acessar,
   .recuperarSenha,
-  .cadastro {
+  .cadastro,
+  .retornar {
     margin: 2em 10em 2em 10em;
     text-align: center;
   }
@@ -93,6 +93,7 @@
     color: #1f3a43;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   }
 
   .usuario,
@@ -113,7 +114,14 @@
     margin: 0.3em 0 0.3em 0;
   }
 
-  .acessar-botao {
+
+  /*section and main*/
+
+  /* ___________________________ */
+  /* Section from remember password*/
+
+  .acessar-botao,
+  .acessar-botao-email {
     font-size: 1.5em;
     padding: 0.5em 0.5em;
     border: none;
@@ -121,7 +129,10 @@
     background-color: aqua;
   }
 
-  .botao {
+  /* ___________________________ */
+
+  .botao,
+  .botao-retornar {
     font-size: 0.8em;
     padding: 0.5em;
     font-weight: 700;
@@ -160,41 +171,28 @@
 
   <main>
     <section class="autenticacao">
-      <h2 class="autenticacao-titulo">Autenticação do usuário</h2>
-      <p1>Informe os dados para acesso a plataforma</p1>
+      <h2 class="autenticacao-titulo">Recuperar senha</h2>
+      <p1>Informe o seu e-mail para recuperar o usuário</p1>
     </section>
 
     <section class="formulario">
       <form>
         <label class="identificacao">
-          Usuário:
-          <input type="text" class="usuario" required placeholder="Entre com seu usuario" />
+          Email cadastrado:
+          <input type="text" class="usuario" required placeholder="Entre com seu e-mail" />
         </label>
-
-        <label class="identificacao">
-          Senha:
-          <input type="password" class="senha" required placeholder="Digite a sua senha" />
-        </label>
-
-        <label class="checkbox"><input type="checkbox" />Lembrar-me</label>
       </form>
     </section>
 
     <section class="acessar">
-      <button class="acessar-botao">Acessar</button>
+      <button class="acessar-botao-email">Recuperar</button>
     </section>
 
-    <section class="recuperarSenha">
-      <p2>Esqueceu a senha?</p2>
-      <button class="botao">Recuperar</button>
+    <section class="retornar">
+      <p2>Página Inicial: </p2>
+      <button class="botao-retornar">Retonar para página inicial</button>
     </section>
 
-    <section class="cadastro">
-      <p2>Ainda não tem conta?</p2>
-      <button class="botao">Cadastra-se</button>
-    </section>
-
-    <script src="./jquery.js"></script>
 
   </main>
 
