@@ -7,7 +7,7 @@
   <meta name="viewport" content="width-device-width" />
   <title>Auto peça</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./reset.min.css">
+  <link rel="stylesheet" href="./reset.min.css" />
 </head>
 
 <style>
@@ -33,7 +33,6 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-
   }
 
   /*header*/
@@ -48,48 +47,55 @@
     font-size: 2.2em;
     font-weight: bolder;
     padding: 1em;
-
   }
 
   /*section and main*/
 
-
   .autenticacao {
-    margin: 2em 0em 0 0;
+    margin: 2em 10em 2em 10em;
+    text-align: center;
   }
 
   .autenticacao-titulo {
     background: lightblue;
-    text-align: left;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.6em;
     border: none;
-    border-radius: 0.5em;
+    border-radius: 1em;
     padding: 0.5em 0 0.5em 0.5em;
     margin: 1em 0em;
   }
 
-  .formulario {
-    display: inline-block;
-    width: 49%;
+  .formulario,
+  .acessar,
+  .recuperarSenha,
+  .cadastro {
+    margin: 2em 10em 2em 10em;
+    text-align: center;
   }
 
-  .titulo-esquerda {
+  form,
+  label {
+    display: block;
+  }
+
+  input {
+    display: inline-block;
+  }
+
+  p1 {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 1em 0em;
   }
 
   p2 {
     font-size: 1em;
-    text-align: justify;
-    font-weight: 500;
+    font-weight: 900;
   }
 
   /*footer*/
   footer {
     margin: 4em;
-    background: white;
     color: black;
   }
 
@@ -108,34 +114,37 @@
   <main>
     <section class="autenticacao">
       <h2 class="autenticacao-titulo">Autenticação do usuário</h2>
-      <p1>Informe os dados para acesso</p1>
+      <p1>Informe os dados para acesso a plataforma</p1>
     </section>
 
-    <section class="formalario">
-      <div class="dados">
-        <form>
-          <label class="identificacao">Usuário</label>
-          <input type="text" class="usuario" required placeholder="Entre com seu usuario">
+    <section class="formulario">
+      <form>
+        <label class="identificacao">
+          Usuário:
+          <input type="text" class="usuario" required placeholder="Entre com seu usuario" />
+        </label>
 
-          <label class="identificacao">Senha</label>
-          <input type="password" class="senha" required>
+        <label class="identificacao">
+          Senha:
+          <input type="password" class="senha" required placeholder="Digite a sua senha" />
+        </label>
 
-          <label class="ckeckbox"><input type="checkbox">Lembrar-me</label>
-        </form>
-      </div>
-    </section>
-
-    <section class="cadastro">
-
-    </section>
-
-    <section class="recuperarSenha">
-      <p2>Ainda não tem conta?</p2>
-      <button>Cadastra-se</button>
+        <label class="ckeckbox"><input type="checkbox" />Lembrar-me</label>
+      </form>
     </section>
 
     <section class="acessar">
-      <button>Acessar</button>
+      <button class="acessar-botao">Acessar</button>
+    </section>
+
+    <section class="recuperarSenha">
+      <p2>Esqueceu a senha?</p2>
+      <button class="botao">Recuperar</button>
+    </section>
+
+    <section class="cadastro">
+      <p2>Ainda não tem conta?</p2>
+      <button class="botao">Cadastra-se</button>
     </section>
 
   </main>
