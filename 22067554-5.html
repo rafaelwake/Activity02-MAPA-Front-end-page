@@ -3,11 +3,12 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UFT-8" />
-  <meta name="viewport" content="width-device-width" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Auto peça</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./reset.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <style>
@@ -49,8 +50,7 @@
     padding: 1em;
   }
 
-  /*section and main*/
-
+  /*section and main from autentication*/
   .autenticacao {
     margin: 2em 10em 2em 10em;
     text-align: center;
@@ -71,7 +71,8 @@
   .formulario,
   .acessar,
   .recuperarSenha,
-  .cadastro {
+  .cadastro,
+  .retornar {
     margin: 2em 10em 2em 10em;
     text-align: center;
   }
@@ -113,12 +114,14 @@
     margin: 0.3em 0 0.3em 0;
   }
 
-  .acessar-botao {
+  .acessar-botao,
+  .botao-cadastrar {
     font-size: 1.5em;
     padding: 0.5em 0.5em;
     border: none;
     border-radius: 0.4em;
     background-color: aqua;
+    cursor: pointer;
   }
 
   .botao-cadastro,
@@ -129,6 +132,7 @@
     border: none;
     border-radius: 0.8em;
     background-color: whitesmoke;
+    cursor: pointer;
   }
 
   p1 {
@@ -140,6 +144,53 @@
     font-size: 1em;
     font-weight: 900;
   }
+
+  /* Section from remember password*/
+
+  .acessar-botao,
+  .acessar-botao-email {
+    font-size: 1.5em;
+    padding: 0.5em 0.5em;
+    border: none;
+    border-radius: 0.4em;
+    background-color: aqua;
+    cursor: pointer;
+  }
+
+  /* ___________________________ */
+
+  section .botao,
+  .botao-retornar {
+    font-size: 0.8em;
+    padding: 0.5em;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.8em;
+    background-color: whitesmoke;
+    cursor: pointer;
+  }
+
+  /*registration*/
+  .usuario,
+  .usuario-nome,
+  .senha,
+  .email-cadastro {
+    font-size: 0.8em;
+    padding: 0.5em;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.8em;
+    background-color: whitesmoke;
+  }
+
+  .checkbox {
+    font-size: 1.2em;
+  }
+
+  .acessar {
+    margin: 0.3em 0 0.3em 0;
+  }
+
 
   /*footer*/
   footer {
@@ -160,42 +211,110 @@
   </header>
 
   <main>
-    <section class="autenticacao">
-      <h2 class="autenticacao-titulo">Autenticação do usuário</h2>
-      <p1>Informe os dados para acesso a plataforma</p1>
-    </section>
+    <div class="login">
+      <section class="autenticacao">
+        <h2 class="autenticacao-titulo">Autenticação do usuário</h2>
+        <p1>Informe os dados para acesso a plataforma</p1>
+      </section>
 
-    <section class="formulario">
-      <form>
-        <label class="identificacao">
-          Usuário:
-          <input type="text" class="usuario" required placeholder="Entre com seu usuario" />
-        </label>
+      <section class="formulario">
+        <form>
+          <label class="identificacao">
+            Usuário:
+            <input type="text" class="usuario" required placeholder="Entre com seu usuario" />
+          </label>
 
-        <label class="identificacao">
-          Senha:
-          <input type="password" class="senha" required placeholder="Digite a sua senha" />
-        </label>
+          <label class="identificacao">
+            Senha:
+            <input type="password" class="senha" required placeholder="Digite a sua senha" />
+          </label>
 
-        <label class="checkbox"><input type="checkbox" />Lembrar-me</label>
-      </form>
-    </section>
+          <label class="checkbox"><input type="checkbox" />Lembrar-me</label>
+        </form>
+      </section>
 
-    <section class="acessar">
-      <button class="acessar-botao">Acessar</button>
-    </section>
+      <section class="acessar">
+        <button class="acessar-botao">Acessar</button>
+      </section>
 
-    <section class="recuperarSenha" id="p1">
-      <p2>Esqueceu a senha?</p2>
-      <button class="botao-senha">Recuperar</button>
-    </section>
+      <section class="recuperarSenha" id="p1">
+        <p2>Esqueceu a senha?</p2>
+        <button class="botao-senha">Recuperar</button>
+      </section>
 
-    <section class="cadastro">
-      <p2>Ainda não tem conta?</p2>
-      <button class="botao-cadastro">Cadastra-se</button>
-    </section>
+      <section class="cadastro">
+        <p2>Ainda não tem conta?</p2>
+        <button class="botao-cadastro">Cadastra-se</button>
+      </section>
+    </div>
 
-    <script src="./jquery.js"></script>
+    <div class="remember" hidden>
+      <section class="autenticacao">
+        <h2 class="autenticacao-titulo">Recuperar senha</h2>
+        <p1>Informe o seu e-mail para recuperar o usuário</p1>
+      </section>
+
+      <section class="formulario">
+        <form>
+          <label class="identificacao">
+            Email cadastrado:
+            <input type="text" class="usuario" required placeholder="Entre com seu e-mail" />
+          </label>
+        </form>
+      </section>
+
+      <section class="acessar">
+        <button class="acessar-botao-email">Recuperar</button>
+      </section>
+
+      <section class="retornar">
+        <p2>Página Inicial: </p2>
+        <button class="botao-retornar">Retonar para página inicial</button>
+      </section>
+    </div>
+
+    <div class="registration" hidden>
+      <section class="autenticacao">
+        <h2 class="autenticacao-titulo">Cadastro do usuário</h2>
+        <p1>Informe os dados para cadastrar na plataforma</p1>
+      </section>
+
+      <section class="formulario">
+        <form>
+          <label class="identificacao">
+            Nome:
+            <input type="text" class="usuario-nome" required placeholder="Nome" />
+          </label>
+
+          <label class="identificacao">
+            E-mail:
+            <input type="email" class="email-cadastro" required placeholder="E-mail" />
+          </label>
+
+          <label class="identificacao">
+            Senha:
+            <input type="password" class="senha" required placeholder="Digite a sua senha" />
+          </label>
+        </form>
+      </section>
+
+      <section class="acessar">
+        <button class="botao-cadastrar">Cadastrar</button>
+      </section>
+
+      <section class="retornar">
+        <p2>Página Inicial: </p2>
+        <button class="botao-retornar">Retonar para página inicial</button>
+      </section>
+    </div>
+
+    <div class="fim" hidden>
+      <section class="retornar">
+        <p2>Pronto</p2>
+        <p2>Página Inicial: </p2>
+        <button class="botao-retornar">Retonar para página inicial</button>
+      </section>
+    </div>
 
   </main>
 
@@ -204,6 +323,54 @@
       Todos os Direitos Reservados a Rafael Bernardes&reg - RA: 22067554-5
     </h4>
   </footer>
+
+  <script>
+    $(document).ready(function () {
+      //function to get button from subjects
+      $("section .acessar-botao").on("click", function () {
+        $(".login").hide();
+        $(".remember").hide();
+        $(".registration").hide();
+        $(".fim").show();
+      });
+
+      $("section .botao-retornar").on("click", function () {
+        $(".fim").hide();
+        $(".remember").hide();
+        $(".registration").hide();
+        $(".login").show();
+      });
+
+      $("section .botao-senha").on("click", function () {
+        $(".fim").hide();
+        $(".login").hide();
+        $(".registration").hide();
+        $(".remember").show();
+      });
+
+      $("section .botao-cadastro").on("click", function () {
+        $(".fim").hide();
+        $(".login").hide();
+        $(".remember").hide();
+        $(".registration").show();
+      });
+
+      $("section .acessar-botao-email").on("click", function () {
+        $(".registration").hide();
+        $(".login").hide();
+        $(".remember").hide();
+        $(".fim").show();
+      });
+
+      $("section .botao-cadastrar").on("click", function () {
+        $(".registration").hide();
+        $(".login").hide();
+        $(".remember").hide();
+        $(".fim").show();
+      });
+    });
+  </script>
+
 </body>
 
 </html>
